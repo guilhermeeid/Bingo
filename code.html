@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo - Digite o código da sala</title>
+    <!-- Fontes: Mochiy Pop One e Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilização geral */
+        body {
+            background-color: #80FF81; /* Cor de fundo */
+            display: flex; /* Flexbox para centralizar o conteúdo */
+            flex-direction: column; /* Itens organizados em coluna */
+            align-items: center; /* Centralizar horizontalmente */
+            justify-content: center; /* Centralizar verticalmente */
+            height: 100vh; /* Tela cheia */
+            margin: 0;
+            font-family: 'Inter', sans-serif; /* Fonte padrão */
+        }
+
+        /* Estilização do título */
+        h1 {
+            font-family: 'Mochiy Pop One', sans-serif; /* Fonte específica */
+            color: #423096; /* Cor do título */
+            font-size: 110px; /* Tamanho do texto */
+            margin-top: 0px; /* Espaçamento superior e inferior */
+            margin-bottom: 180px; /* Espaçamento superior e inferior */
+            text-align: center; /* Centralização do texto */
+        }
+
+        /* Contêiner da entrada de texto */
+        .input-container {
+            background-color: #FDF74C; /* Cor de fundo do contêiner */
+            padding: 20px 40px; /* Espaçamento interno */
+            border-radius: 40px; /* Bordas arredondadas */
+            border: 3px solid #EBE538; /* Borda externa com cor */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            margin-bottom: 50px; /* Espaçamento inferior */
+            text-align: center; /* Centralizar conteúdo */
+        }
+
+        /* Estilização do rótulo (label) */
+        .input-container label {
+            font-size: 60px; /* Tamanho do texto */
+            color: #2400C5; /* Cor do texto */
+            font-weight: bold; /* Negrito */
+        }
+
+        /* Estilização do input de texto */
+        #room-code {
+            width: 350px; /* Largura fixa */
+            height: 80px; /* Altura fixa */
+            font-size: 40px; /* Tamanho do texto */
+            font-weight: bold; /* Negrito */
+            color: #2400C5; /* Cor do texto */
+            border: 3px solid #EBE538; /* Borda do input */
+            border-radius: 40px; /* Bordas arredondadas */
+            text-align: center; /* Texto centralizado */
+            background-color: #FDF74C; /* Cor de fundo */
+            outline: none; /* Remover borda azul ao focar */
+        }
+
+        /* Placeholder com opacidade reduzida */
+        #room-code::placeholder {
+            color: #1A008E; /* Cor do placeholder */
+            opacity: 0.5; /* Opacidade menor */
+            font-style: italic; /* Estilo em itálico */
+        }
+
+        /* Estilização do botão */
+        .button {
+            background-color: #FDF74C; /* Cor de fundo */
+            color: #2400C5; /* Cor do texto */
+            font-size: 40px; /* Tamanho do texto */
+            font-weight: 700; /* Negrito */
+            padding: 20px 60px; /* Espaçamento interno */
+            border: 3px solid #EBE538; /* Borda do botão */
+            border-radius: 40px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de ponteiro */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            transition: transform 0.2s; /* Transição suave no hover */
+            text-decoration: none; /* Remover sublinhado */
+            text-align: center; /* Centralização do texto */
+            margin-top: 100px;
+        }
+
+        /* Efeito ao passar o mouse no botão */
+        .button:hover {
+            transform: scale(1.020); /* Leve aumento no tamanho */
+        }
+    </style>
+</head>
+<body>
+    <!-- Título principal -->
+    <h1>Bingo</h1>
+
+    <!-- Caixa de entrada para o código -->
+    <div class="input-container">
+        <label for="room-code">Digite o código da sala:</label>
+        <input type="text" id="room-code" placeholder="ex: #213498">
+    </div>
+
+    <!-- Botão de entrada -->
+    <a href="name.html" class="button">Entrar na sala</a>
+</body>
+</html>
