@@ -5,14 +5,14 @@ O Projeto Integrador de Organização de Sistemas Web foi desenvolvido ao longo 
 O jogo de Bingo consiste em um sorteio aleatório de números, que são chamados em sequência. Os jogadores marcam os números sorteados em suas cartelas, que possuem uma grade com números aleatórios organizados em linhas e colunas. O objetivo é preencher toda a cartela para então declarar "Bingo!" e vencer o jogo. Esse mesmo conceito foi implementado no projeto de Bingo Online, explorando a integração de funcionalidades interativas e dinâmicas.
 
 ## Wireframe de alta fidelidade
-![Página Inicial](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Home.png)
-![Código da Sala](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Digite%20o%20c%C3%B3digo%20da%20sala.png)
-![Nome](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Nome.png)
-![Cartela](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Cartela.png)
-![Cartela - Número Sorteado](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Cartela%20-%20Bola%20Sorteada.png)
-![Sorteador](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Sorteador.png)
-![Sorteador - Número Sorteado](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Sorteador%20-%20Bola%20Sorteada.png)
-![Vitória](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/main/Wireframe/Vencedor!%20-%20Voltar%20ao%20in%C3%ADcio.png)
+![Página Inicial](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Home.png)
+![Código da Sala](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Digite%20o%20c%C3%B3digo%20da%20sala.png)
+![Nome](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Nome.png)
+![Cartela](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Cartela.png)
+![Cartela - Número Sorteado](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Cartela%20-%20Bola%20Sorteada.png)
+![Sorteador](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Sorteador.png)
+![Sorteador - Número Sorteado](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Sorteador%20-%20Bola%20Sorteada.png)
+![Vitória](https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/Main/Wireframe/Vencedor!%20-%20Voltar%20ao%20in%C3%ADcio.png)
 
 ## Tecnologias:
 No Projeto Integrador de Organização de Sistemas Web, a recriação do jogo Bingo utilizou um conjunto de tecnologias essenciais para o desenvolvimento web moderno: HTML, CSS, JavaScript e Node.js. Cada uma desempenhou funções específicas e complementares, garantindo a funcionalidade e a experiência visual do projeto. Abaixo estão as tecnologias e suas respectivas funções:
