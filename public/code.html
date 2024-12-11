@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo - Código da sala</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #80FF81;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Mochiy Pop One', sans-serif;
+            color: #423096;
+            font-size: 110px;
+            margin-top: 0px;
+            margin-bottom: 180px;
+            text-align: center;
+        }
+
+        .input-container {
+            background-color: #FDF74C;
+            padding: 20px 40px;
+            border-radius: 40px;
+            border: 3px solid #EBE538;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .input-container label {
+            font-size: 60px;
+            color: #2400C5;
+            font-weight: bold;
+        }
+
+        #room-code {
+            width: 350px;
+            height: 80px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #2400C5;
+            border: 3px solid #EBE538;
+            border-radius: 40px;
+            text-align: center;
+            background-color: #FDF74C;
+            outline: none;
+        }
+
+        #room-code::placeholder {
+            color: #1A008E;
+            opacity: 0.5;
+            font-style: italic;
+        }
+
+        .button {
+            background-color: #FDF74C;
+            color: #2400C5;
+            font-size: 40px;
+            font-weight: 700;
+            padding: 20px 60px;
+            border: 3px solid #EBE538;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .button:hover {
+            transform: scale(1.020);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bingo</h1>
+    <div class="input-container">
+        <label for="room-code">Digite o código da sala:</label>
+        <input type="text" id="room-code" placeholder="ex: #213498">
+    </div>
+    <a href="javascript:void(0);" class="button" onclick="validateRoom()">Entrar na sala</a>
+    <script>
+        async function validateRoom() {
+            const roomCode = document.getElementById("room-code").value;
+
+            try {
+                const response = await fetch("http://localhost:3000/validate-room", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ roomCode }),
+                });
+                
+                const result = await response.json();
+                if (result.valid) {
+                    window.location.href = "name.html";
+                } else {
+                    alert("Código Inválido");
+               }
+            } catch (error) {
+                console.error("Erro ao validar o código:", error);
+            }
+        }
+        function validateRoom() {
+            const roomCodeInput = document.getElementById("room-code").value;
+            const roomCode = localStorage.getItem("roomCode");
+            if (roomCode === roomCodeInput) {
+                window.location.href = "name.html";
+            } else {
+                alert("Código inválido. Tente novamente!");
+            }
+        }
+    </script>
+</body>
+</html>
