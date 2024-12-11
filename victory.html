@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo - Vitória</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url("https://raw.githubusercontent.com/guilhermeeid/Bingo/refs/heads/develop/murilo/victory/victory_image.png");
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .namecontainer {
+            background-color: #FDF74C;
+            padding: 20px 40px;
+            border-radius: 40px;
+            border: 3px solid #EBE538;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 0px;
+            text-align: center;
+            font-size: 60px;
+            color: #2400C5;
+            font-weight: bold;
+        }
+
+        .backbutton {
+            position: absolute;
+            background-color: #FDF74C;
+            border: 3px solid #EDE73E;
+            border-radius: 40px;
+            width: 310px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+            margin-top: 0px;
+            margin-right: 1150px;
+            margin-bottom: 620px;
+            font-size: 35px;
+            font-weight: 600;
+            color: #1A008E;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .backbutton:hover {
+            transform: scale(1.010);
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html" class="backbutton">🠔 Voltar ao início</a>
+
+    <div class="namecontainer" id="namecontainer">Nome venceu o BINGO!</div>
+
+    <script>
+        window.onload = () => {
+            const winner = localStorage.getItem("playerName");
+            if (winner) {
+                document.getElementById("namecontainer").textContent = `${winner} venceu o BINGO!`;
+            } else {
+                document.getElementById("namecontainer").textContent = "Vencedor não identificado!";
+            }
+        };
+    </script>
+</body>
+</html>
