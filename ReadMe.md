@@ -33,3 +33,4 @@ ao manipular o sorteio de números, verificar as marcações das cartelas dos jo
 **Links Importantes:**
 - [Repositório](https://github.com/guilhermeeid/Bingo)
 - [Vídeo de Apresentação](https://www.youtube.com/watch?v=gtHzFuEf10c)
+- [URL do Site](https://bingo-64.vercel.app/home.html)
